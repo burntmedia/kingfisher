@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A spiritual growth plan assessment for reflecting on discipleship, community, ministry, mission, and worship."
+    />
+    <title>Spiritual Growth Plan | Kingfisher Church</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/spiritual-growth-plan.css" />
+    <script src="assets/js/content.js" defer></script>
+    <script src="assets/js/main.js?v=4" defer></script>
+    <script src="assets/js/spiritual-growth-plan.js" defer></script>
+  </head>
+  <body data-page="spiritual-growth-plan">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header></header>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu></div>
+
+    <main id="main" class="growth-page">
+      <section class="growth-hero" aria-labelledby="growth-title">
+        <div class="growth-hero-copy">
+          <p class="eyebrow">Spiritual Growth Plan</p>
+          <h1 id="growth-title">A clearer next step for your life with Jesus.</h1>
+          <p>
+            Reflect across five areas of discipleship, see where you are strong, and notice where God may be
+            inviting your attention next.
+          </p>
+        </div>
+        <div class="growth-hero-panel" aria-label="Spiritual growth areas">
+          <img src="assets/img/churchlogo.svg" alt="Kingfisher Church" />
+          <div class="purpose-wheel" aria-hidden="true">
+            <span>Community</span>
+            <span>Maturity</span>
+            <span>Ministry</span>
+            <span>Mission</span>
+            <span>Worship</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="growth-intro-band" aria-label="Assessment overview">
+        <article>
+          <span>25</span>
+          <p>short reflections</p>
+        </article>
+        <article>
+          <span>5</span>
+          <p>areas of growth</p>
+        </article>
+        <article>
+          <span>1</span>
+          <p>simple plan to begin</p>
+        </article>
+      </section>
+
+      <section class="assessment-shell" aria-labelledby="assessment-title">
+        <div class="assessment-heading">
+          <div>
+            <p class="eyebrow">Assessment</p>
+            <h2 id="assessment-title">Take a few quiet minutes.</h2>
+          </div>
+          <p>
+            Move the marker from 0 to 5 for each statement. Your results will show a balanced picture across
+            community, maturity, ministry, mission, and worship.
+          </p>
+        </div>
+
+        <div class="assessment-layout">
+          <aside class="growth-map" aria-label="Assessment categories">
+            <h2>Growth areas</h2>
+            <ol data-category-list></ol>
+          </aside>
+
+          <div class="assessment-card">
+            <div class="progress-track" aria-hidden="true">
+              <div class="progress-fill" data-progress-fill></div>
+            </div>
+
+            <form class="question-stage" data-question-stage>
+              <div class="question-meta">
+                <span data-question-count></span>
+                <span data-category-name></span>
+              </div>
+              <h2 data-question-text></h2>
+              <p data-question-detail></p>
+
+              <fieldset class="rating-field">
+                <legend>Choose a response</legend>
+                <div class="rating-options" data-rating-options></div>
+                <div class="rating-scale">
+                  <span>Strongly disagree</span>
+                  <span>Strongly agree</span>
+                </div>
+              </fieldset>
+
+              <div class="assessment-controls">
+                <button class="button button-secondary" type="button" data-previous>Previous</button>
+                <button class="button" type="button" data-next disabled>Next</button>
+              </div>
+            </form>
+
+            <section class="results-stage" data-results-stage hidden aria-live="polite">
+              <div class="results-heading">
+                <p class="eyebrow">Your Results</p>
+                <h2>Your spiritual growth snapshot</h2>
+                <p>
+                  These scores are a conversation starter rather than a verdict. Look for one area where a simple,
+                  honest next step could help you grow.
+                </p>
+              </div>
+              <div class="results-grid" data-results-grid></div>
+              <div class="assessment-controls">
+                <button class="button button-secondary" type="button" data-restart>Start again</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-footer></footer>
+  </body>
+</html>
