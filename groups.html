@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Find a Connect Group at Kingfisher Church in Gloucester." />
+    <title>Connect Groups | Kingfisher Church</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/content.js" defer></script>
+    <script src="assets/js/churchsuite-demo-data.js" defer></script>
+    <script src="assets/js/main.js?v=5" defer></script>
+    <script src="assets/js/churchsuite-demo.js" defer></script>
+  </head>
+  <body data-page="groups">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header></header>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu></div>
+
+    <main id="main">
+      <section class="page-hero integration-hero groups-hero">
+        <p class="eyebrow">Connect Groups</p>
+        <h1>Find your people.</h1>
+        <p>Build friendships, grow in faith and find support through the week in a smaller community.</p>
+      </section>
+
+      <aside class="integration-demo-notice" aria-label="Demonstration notice">
+        <span>Concept demo</span>
+        <p>This page is using sample ChurchSuite groups to demonstrate searching and sign-up.</p>
+      </aside>
+
+      <section class="integration-section" aria-labelledby="groups-title">
+        <div class="section-heading integration-heading">
+          <div>
+            <p class="eyebrow">Find a Group</p>
+            <h2 id="groups-title">A group that fits your week</h2>
+          </div>
+          <p class="section-intro">Group availability and meeting information would stay in sync with ChurchSuite automatically.</p>
+        </div>
+
+        <div class="group-finder">
+          <label class="search-field">
+            <span>Search by name or area</span>
+            <input type="search" placeholder="Try ‘Tredworth’ or ‘young adults’" data-group-search />
+          </label>
+          <label>
+            <span>Day</span>
+            <select data-group-day>
+              <option value="All">Any day</option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+            </select>
+          </label>
+          <label>
+            <span>Who for?</span>
+            <select data-group-audience>
+              <option value="All">Everyone</option>
+              <option>Young adults</option>
+              <option>Women</option>
+              <option>Men</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="results-bar">
+          <p><strong data-group-result-count>6 groups</strong> matching your choices</p>
+          <p>Sample availability shown</p>
+        </div>
+        <div class="group-grid" data-group-list></div>
+      </section>
+
+      <section class="group-help-band">
+        <div>
+          <p class="eyebrow">Not Sure?</p>
+          <h2>We can help you find the right fit.</h2>
+          <p>Tell us a little about yourself and the team can recommend a welcoming first group.</p>
+        </div>
+        <button class="button button-secondary" type="button" data-group-open="tredworth-tuesdays">Help me choose</button>
+      </section>
+    </main>
+
+    <dialog class="integration-dialog" data-details-dialog aria-labelledby="details-dialog-title">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Close">×</button>
+      <div class="dialog-intro">
+        <p class="eyebrow" data-dialog-eyebrow></p>
+        <h2 id="details-dialog-title" data-dialog-title></h2>
+        <p data-dialog-summary></p>
+      </div>
+      <form class="integration-form" data-dialog-form>
+        <label>
+          Your name
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          Email address
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          What would help you feel at home? <span>(optional)</span>
+          <textarea name="message" rows="3"></textarea>
+        </label>
+        <p class="form-privacy">In the live version, this would be submitted securely to ChurchSuite.</p>
+        <button class="button" type="submit" data-dialog-submit>Send my enquiry</button>
+      </form>
+      <div class="form-confirmation" data-dialog-confirmation hidden>
+        <span aria-hidden="true">✓</span>
+        <h3>Your enquiry is ready.</h3>
+        <p>This is a demonstration, so nothing has been submitted. A live form would now add the enquiry to ChurchSuite and notify the right group leader.</p>
+      </div>
+    </dialog>
+
+    <footer class="site-footer" data-footer></footer>
+  </body>
+</html>

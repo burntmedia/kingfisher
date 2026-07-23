@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="assets/js/content.js" defer></script>
-    <script src="assets/js/main.js?v=4" defer></script>
+    <script src="assets/js/churchsuite-demo-data.js" defer></script>
+    <script src="assets/js/main.js?v=5" defer></script>
+    <script src="assets/js/churchsuite-demo.js" defer></script>
   </head>
   <body data-page="home">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -22,6 +24,8 @@
       <nav class="desktop-nav" aria-label="Primary navigation">
         <a href="about.html">About</a>
         <a href="ministries.html">Ministries</a>
+        <a href="events.html">What's On</a>
+        <a href="groups.html">Groups</a>
         <a href="posts.html">News & Devotionals</a>
         <a href="get-involved.html">Get Involved</a>
         <a href="contact.html">Contact</a>
@@ -51,6 +55,8 @@
         <details class="mobile-folder" open>
           <summary>Explore</summary>
           <a href="ministries.html">Ministries</a>
+          <a href="events.html">What's On</a>
+          <a href="groups.html">Connect Groups</a>
           <a href="posts.html">News & Devotionals</a>
           <a href="get-involved.html">Get Involved</a>
         </details>
@@ -117,6 +123,21 @@
         </div>
       </section>
 
+      <section class="integration-preview" aria-labelledby="home-events-title">
+        <div class="section-heading integration-heading">
+          <div>
+            <p class="eyebrow">What's On</p>
+            <h2 id="home-events-title">Coming up at Kingfisher</h2>
+          </div>
+          <a class="arrow-link" href="events.html">View all events</a>
+        </div>
+        <div class="integration-demo-notice compact-demo-notice" aria-label="Demonstration notice">
+          <span>ChurchSuite concept</span>
+          <p>Sample events shown for demonstration.</p>
+        </div>
+        <div class="event-grid" data-event-preview></div>
+      </section>
+
       <section class="card-section" aria-labelledby="next-title">
         <div class="section-heading">
           <p class="eyebrow">Connect</p>
@@ -131,7 +152,7 @@
             <div>
               <h3>Connect Groups</h3>
               <p>Find a smaller community where you can build friendships, pray, and grow.</p>
-              <a href="get-involved.html#connect-groups">Find out more</a>
+              <a href="groups.html">Find a group</a>
             </div>
           </article>
           <article class="feature-card">

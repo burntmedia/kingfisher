@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Find upcoming services, courses and community events at Kingfisher Church in Gloucester." />
+    <title>What's On | Kingfisher Church</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/content.js" defer></script>
+    <script src="assets/js/churchsuite-demo-data.js" defer></script>
+    <script src="assets/js/main.js?v=5" defer></script>
+    <script src="assets/js/churchsuite-demo.js" defer></script>
+  </head>
+  <body data-page="events">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header></header>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu></div>
+
+    <main id="main">
+      <section class="page-hero integration-hero">
+        <p class="eyebrow">What's On</p>
+        <h1>There is a place for you.</h1>
+        <p>Explore Sundays, community gatherings, courses and special events happening at Kingfisher Church.</p>
+      </section>
+
+      <aside class="integration-demo-notice" aria-label="Demonstration notice">
+        <span>Concept demo</span>
+        <p>This page is using sample ChurchSuite data to demonstrate the proposed integration.</p>
+      </aside>
+
+      <section class="integration-section" aria-labelledby="upcoming-events-title">
+        <div class="section-heading integration-heading">
+          <div>
+            <p class="eyebrow">Coming Up</p>
+            <h2 id="upcoming-events-title">Upcoming events</h2>
+          </div>
+          <p class="section-intro">In the finished version, publishing or updating an event in ChurchSuite would automatically update this page.</p>
+        </div>
+
+        <div class="filter-row" aria-label="Filter events">
+          <button class="filter-chip is-active" type="button" data-event-filter="All" aria-pressed="true">All events</button>
+          <button class="filter-chip" type="button" data-event-filter="Sundays" aria-pressed="false">Sundays</button>
+          <button class="filter-chip" type="button" data-event-filter="Community" aria-pressed="false">Community</button>
+          <button class="filter-chip" type="button" data-event-filter="Families" aria-pressed="false">Families</button>
+          <button class="filter-chip" type="button" data-event-filter="Courses" aria-pressed="false">Courses</button>
+          <button class="filter-chip" type="button" data-event-filter="Young People" aria-pressed="false">Young people</button>
+        </div>
+
+        <div class="event-grid" data-event-list></div>
+      </section>
+
+      <section class="cta-band">
+        <div>
+          <p class="eyebrow">Plan Your Visit</p>
+          <h2>Coming for the first time?</h2>
+          <p>Find service times, directions and everything you need for a relaxed first visit.</p>
+        </div>
+        <a class="button button-secondary" href="contact.html">Plan your visit</a>
+      </section>
+    </main>
+
+    <dialog class="integration-dialog" data-details-dialog aria-labelledby="details-dialog-title">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Close">×</button>
+      <div class="dialog-intro">
+        <p class="eyebrow" data-dialog-eyebrow></p>
+        <h2 id="details-dialog-title" data-dialog-title></h2>
+        <p data-dialog-summary></p>
+      </div>
+      <form class="integration-form" data-dialog-form>
+        <label>
+          Your name
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          Email address
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          Anything we should know? <span>(optional)</span>
+          <textarea name="message" rows="3"></textarea>
+        </label>
+        <p class="form-privacy">In the live version, this would be submitted securely to ChurchSuite.</p>
+        <button class="button" type="submit" data-dialog-submit>Send my enquiry</button>
+      </form>
+      <div class="form-confirmation" data-dialog-confirmation hidden>
+        <span aria-hidden="true">✓</span>
+        <h3>Thanks — your details are ready to go.</h3>
+        <p>This is a demonstration, so nothing has been submitted. A live form would now create the ChurchSuite response and trigger the appropriate follow-up.</p>
+      </div>
+    </dialog>
+
+    <footer class="site-footer" data-footer></footer>
+  </body>
+</html>
