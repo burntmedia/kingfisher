@@ -1,6 +1,8 @@
 const navLinks = [
   ["About", "about.html"],
   ["Ministries", "ministries.html"],
+  ["What's On", "events.html"],
+  ["Groups", "groups.html"],
   ["News & Devotionals", "posts.html"],
   ["Get Involved", "get-involved.html"],
   ["Contact", "contact.html"],
@@ -38,6 +40,8 @@ const mobileMenuTemplate = `
     <details class="mobile-folder" open>
       <summary>Explore</summary>
       <a href="ministries.html">Ministries</a>
+      <a href="events.html">What's On</a>
+      <a href="groups.html">Connect Groups</a>
       <a href="posts.html">News & Devotionals</a>
       <a href="get-involved.html">Get Involved</a>
       <a href="giving.html">Giving</a>
@@ -69,6 +73,8 @@ const footerTemplate = `
     <h2>Explore</h2>
     <a href="about.html">About</a>
     <a href="ministries.html">Ministries</a>
+    <a href="events.html">What's On</a>
+    <a href="groups.html">Connect Groups</a>
     <a href="posts.html">News & Devotionals</a>
     <a href="giving.html">Giving</a>
   </nav>

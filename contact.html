@@ -6,7 +6,8 @@
     <title>Contact | Kingfisher Church</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="assets/js/content.js" defer></script>
-    <script src="assets/js/main.js?v=4" defer></script>
+    <script src="assets/js/main.js?v=5" defer></script>
+    <script src="assets/js/churchsuite-demo.js" defer></script>
   </head>
   <body data-page="contact">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -45,6 +46,54 @@
             src="https://www.openstreetmap.org/export/embed.html?bbox=-2.2385759%2C51.8509967%2C-2.2285759%2C51.8579967&amp;layer=mapnik&amp;marker=51.8544967%2C-2.2335759"
           ></iframe>
           <a href="https://www.openstreetmap.org/search?query=Kingfisher%20Church%2C%20Moor%20Street%2C%20Tredworth%2C%20Gloucester%2C%20GL1%204NJ">Open in OpenStreetMap</a>
+        </div>
+      </section>
+
+      <section class="connect-form-section" id="connect" aria-labelledby="connect-form-title">
+        <div class="connect-form-intro">
+          <p class="eyebrow">Connect With Us</p>
+          <h2 id="connect-form-title">A simple first step.</h2>
+          <p>In the finished integration, this form could add an enquiry directly to ChurchSuite and begin the appropriate welcome or serving follow-up.</p>
+          <aside class="integration-demo-notice compact-demo-notice" aria-label="Demonstration notice">
+            <span>Concept demo</span>
+            <p>No personal information is submitted from this sample form.</p>
+          </aside>
+        </div>
+        <div class="connect-form-panel">
+          <form class="integration-form" data-demo-form>
+            <div class="form-row">
+              <label>
+                First name
+                <input type="text" name="first-name" autocomplete="given-name" required />
+              </label>
+              <label>
+                Last name
+                <input type="text" name="last-name" autocomplete="family-name" required />
+              </label>
+            </div>
+            <label>
+              Email address
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <fieldset class="interest-fieldset">
+              <legend>I would like to...</legend>
+              <label><input type="checkbox" name="interest" value="visit" /> Plan my first visit</label>
+              <label><input type="checkbox" name="interest" value="group" /> Find a Connect Group</label>
+              <label><input type="checkbox" name="interest" value="serve" /> Explore serving</label>
+              <label><input type="checkbox" name="interest" value="faith" /> Talk to someone about faith</label>
+            </fieldset>
+            <label>
+              Message <span>(optional)</span>
+              <textarea name="message" rows="4"></textarea>
+            </label>
+            <p class="form-privacy">A live form would include the church's privacy wording and submit securely to ChurchSuite.</p>
+            <button class="button" type="submit">Send my details</button>
+          </form>
+          <div class="form-confirmation" data-form-confirmation hidden>
+            <span aria-hidden="true">✓</span>
+            <h3>Thanks — the team would take it from here.</h3>
+            <p>This is a demonstration, so nothing has been submitted. In the live version, ChurchSuite could assign the appropriate tag, flow and follow-up person automatically.</p>
+          </div>
         </div>
       </section>
     </main>
